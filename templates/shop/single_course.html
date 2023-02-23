@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %}{{ course.title }}{% endblock title%}
+{% block content %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1>{{ course.title }}</h1>
+      <h2>{{ course.category }}</h2>
+      <p>Price: {{ course.price }}</p>
+      <p>Students Quantity: {{ course.students_qty }}</p>
+    </div>
+    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+      <button class="btn btn-primary btn-lg">Buy</button>
+    </div>
+  </div>
+</div>
+{% endblock content %} {% comment %} {% extends 'base.html' %} {% block title
+%}{{ course.title }}{%endblock title %} {% block content %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1>{{ course.title }}</h1>
+      <h2>{{ course.category }}</h2>
+      <p>Price: {{ course.price }}</p>
+      <p>Students Quantity: {{ course.students_qty }}</p>
+    </div>
+    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+      <button class="btn btn-primary btn-lg">Buy</button>
+    </div>
+  </div>
+</div>
+{% endblock content %} {% endcomment %}
